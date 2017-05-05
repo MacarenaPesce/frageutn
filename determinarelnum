@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   
+    int negativo=0, positivo=0, cero=0, num;
+
+    for(int i=0; i<10; i++)
+    {
+    cout<<"ingrese numero"<<endl;
+    cin>>num;
+     if(num<0)
+     {
+     negativo++;
+     }
+     else if(num==0)
+     {
+     cero++;
+     }
+     else
+     positivo++;
+    }
+    cout<<"positivos: "<<positivo<<endl<<"ceros: "<<cero<<endl<<"negativos: "<<negativo<<endl;
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
